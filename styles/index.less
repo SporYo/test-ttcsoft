@@ -1,15 +1,12 @@
 @font-face {
-    font-family: 'Myriad Pro'; 
-    src: url(../fonts/MyriadPro.otf); 
-   }
-
-html,
-body {
-  margin: 0;
-  height: 100%;
-  font-family: Arial, sans-serif;
+    font-family: 'Myriad Pro';
+    src: url(../fonts/MyriadPro.otf);
 }
-
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial,sans-serif;
+}
 .container {
     margin: 0 auto;
     width: 960px;
@@ -20,25 +17,23 @@ body {
         float: left;
         width: 30%;
         height: 100%;
-        .inputs{
+        .inputs {
             margin-top: 82px;
             margin-left: 20px;
             font-family: 'Myriad Pro';
-            input[type="text"],
-            input[type="password"]{
+            input[type="text"], input[type="password"] {
                 display: block;
                 width: 230px;
                 height: 14px;
                 margin-bottom: 15px;
                 font-family: 'Myriad Pro';
-                color:  #fff;
+                color: #fff;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 1.5px;
                 background: #000;
                 border: 1px solid #fff;
                 padding: 10px 7px;
-                font-weight: bold;
                 outline: none;
             }
             input[type="password"] {
@@ -58,20 +53,20 @@ body {
             input[type="checkbox"]:checked + label:before {
                 background: url(../img/checkOn.png) no-repeat;
             }
-            label{
-                span{
+            label {
+                span {
                     display: inline-block;
                     position: fixed;
                     margin-left: 5px;
                 }
-            }            
-            input[type="submit"]{
-                background-color: rgb(206, 25, 133);
+            }
+            input[type="submit"] {
+                background-color: rgb(206,25,133);
                 width: 84px;
                 height: 29px;
                 text-align: center;
                 font-family: 'Myriad Pro';
-                color:  rgb(204, 204, 204);
+                color: rgb(204,204,204);
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 24px;
@@ -82,13 +77,13 @@ body {
                 outline: none;
                 margin-top: 41px;
             }
-            input[type="reset"]{
-                background-color: rgb(25, 43, 206);
+            input[type="reset"] {
+                background-color: rgb(25,43,206);
                 width: 84px;
                 height: 29px;
                 text-align: center;
                 font-family: 'Myriad Pro';
-                color:rgb(204, 204, 204);
+                color: rgb(204,204,204);
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 24px;
@@ -101,12 +96,12 @@ body {
             }
         }
     }
-    main{
-        background: rgb(246, 242, 242);
+    main {
+        background: rgb(246,242,242);
         float: right;
         max-width: 70%;
         height: 100%;
-        nav{
+        nav {
             margin-left: 10px;
             .main-menu {
                 margin: 25px 30px;
@@ -117,7 +112,6 @@ body {
                     display: inline-block;
                     margin-right: -4px;
                     height: 40px;
-                    
                 }
                 a {
                     display: block;
@@ -125,14 +119,14 @@ body {
                     text-decoration: none;
                     text-transform: uppercase;
                     font-family: 'Myriad Pro';
-                    color:  #040303;
+                    color: #040303;
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 16.8px;
                     text-align: left;
                 }
                 a:hover {
-                    background: rgb(233, 169, 169);  
+                    background: rgb(233,169,169);
                 }
                 .sub-menu {
                     position: absolute;
@@ -140,9 +134,9 @@ body {
                     margin: 0;
                     padding: 0;
                     list-style: none;
-                    background: rgb(233, 169, 169);
+                    background: rgb(233,169,169);
                     a:hover {
-                        background: rgb(204, 204, 204); 
+                        background: rgb(204,204,204);
                     }
                     a {
                         display: block;
@@ -150,7 +144,7 @@ body {
                         text-decoration: none;
                         text-transform: none;
                         font-family: 'Myriad Pro';
-                        color:  #040303;
+                        color: #040303;
                         font-size: 14px;
                         font-weight: 400;
                         line-height: 24px;
@@ -163,19 +157,19 @@ body {
                 }
             }
         }
-        section{
+        section {
             display: flex;
             flex-wrap: wrap;
             align-items: flex-start;
             margin-left: 10px;
             margin-top: -10px;
             .itemBlock {
-                background: rgb(212, 196, 122);
+                background: rgb(212,196,122);
                 max-height: 210px;
                 width: 140px;
                 padding: 17px 17px 20px 15px;
                 font-family: 'Myriad Pro';
-                color:  #000000;
+                color: #000000;
                 font-size: 15px;
                 font-weight: 400;
                 line-height: 18px;
@@ -187,25 +181,24 @@ body {
     .pages {
         margin-top: 10px;
         text-align: center;
-        a{
+        a {
             text-decoration: none;
-            color:  #040303;
+            color: #040303;
             font-family: 'Myriad Pro';
-            color:  #040303;
+            color: #040303;
             font-size: 14px;
             font-weight: 400;
             line-height: 24px;
             text-align: left;
         }
-        .page2{
-            color: rgb(215, 26, 26);
+        .page2 {
+            color: rgb(215,26,26);
         }
     }
 }
-
-@media screen and (max-width: 960px) {
+@media screen and (max-width:960px) {
     .sidebar {
-      display:none;
+        display: none;
     }
     .container {
         width: 96%;
@@ -216,7 +209,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        align-content: center; 
+        align-content: center;
         overflow: auto;
     }
 }
