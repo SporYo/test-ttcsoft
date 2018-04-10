@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../fonts/MyriadPro.otf);
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  width: 960px;
+  height: 100%;
+}
+.container .sidebar {
+  background: #000;
+  color: #cccccc;
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+.container .sidebar .inputs {
+  margin-top: 82px;
+  margin-left: 20px;
+  font-family: 'Myriad Pro';
+}
+.container .sidebar .inputs input[type="text"],
+.container .sidebar .inputs input[type="password"] {
+  display: block;
+  width: 230px;
+  height: 14px;
+  margin-bottom: 15px;
+  font-family: 'Myriad Pro';
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5px;
+  background: #000;
+  border: 1px solid #fff;
+  padding: 10px 7px;
+  font-weight: bold;
+  outline: none;
+}
+.container .sidebar .inputs input[type="password"] {
+  margin-bottom: 21px;
+}
+.container .sidebar .inputs input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+.container .sidebar .inputs input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url(../img/checkOff.png) no-repeat;
+}
+.container .sidebar .inputs input[type="checkbox"]:checked + label:before {
+  background: url(../img/checkOn.png) no-repeat;
+}
+.container .sidebar .inputs label span {
+  display: inline-block;
+  position: fixed;
+  margin-left: 5px;
+}
+.container .sidebar .inputs input[type="submit"] {
+  background-color: #ce1985;
+  width: 84px;
+  height: 29px;
+  font-family: 'Myriad Pro';
+  color: #cccccc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  margin-top: 41px;
+}
+.container .sidebar .inputs input[type="reset"] {
+  background-color: #192bce;
+  width: 84px;
+  height: 29px;
+  font-family: 'Myriad Pro';
+  color: #cccccc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  margin-left: 16px;
+}
+.container main {
+  background: #f6f2f2;
+  float: right;
+  max-width: 70%;
+  height: 100%;
+}
+.container main nav {
+  margin-left: 10px;
+}
+.container main nav .main-menu {
+  margin: 25px 30px;
+  padding: 0;
+  list-style: none;
+}
+.container main nav .main-menu > li {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+  height: 40px;
+}
+.container main nav .main-menu a {
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Myriad Pro';
+  color: #040303;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+}
+.container main nav .main-menu a:hover {
+  background: #e9a9a9;
+}
+.container main nav .main-menu .sub-menu {
+  position: absolute;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #e9a9a9;
+}
+.container main nav .main-menu .sub-menu a:hover {
+  background: #cccccc;
+}
+.container main nav .main-menu .sub-menu a {
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-transform: none;
+  font-family: 'Myriad Pro';
+  color: #040303;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+}
+.container main nav .main-menu > li:hover .sub-menu {
+  display: block;
+}
+.container main section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+.container main section .itemBlock {
+  background: #d4c47a;
+  max-height: 210px;
+  width: 140px;
+  padding: 17px 17px 20px 15px;
+  font-family: 'Myriad Pro';
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+.container .pages {
+  margin-top: 10px;
+  text-align: center;
+}
+.container .pages a {
+  text-decoration: none;
+  font-family: 'Myriad Pro';
+  color: #040303;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.container .pages .page2 {
+  color: #d71a1a;
+}
+@media screen and (max-width: 960px) {
+  .sidebar {
+    display: none;
+  }
+  .container {
+    width: 96%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+  }
+}
